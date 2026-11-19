@@ -1,4 +1,4 @@
-# Image Processing Tools
+# QuickCompress
 
 A fast, lightweight batch image processor designed for publishing workflows (WordPress, Facebook, Instagram, and web platforms). It resizes large camera/design assets while strictly preserving aspect ratio, compresses files for fast web delivery, and converts heavy PNGs/TIFFs to web-ready JPEGs.
 
