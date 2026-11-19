@@ -1,6 +1,6 @@
 # QuickCompress
 
-A fast, lightweight batch image processor designed for publishing workflows (WordPress, Facebook, Instagram, and web platforms). It resizes large camera/design assets while strictly preserving aspect ratio, compresses files for fast web delivery, and converts heavy PNGs/TIFFs to web-ready JPEGs.
+A fast, lightweight batch image processor designed for publishing workflows (WordPress, Facebook, Instagram, and web platforms). It resizes large camera and graphic assets while strictly preserving aspect ratio, compresses files for fast web delivery, and converts heavy PNGs/TIFFs to web-ready JPEGs.
 
 ---
 
@@ -23,9 +23,10 @@ A fast, lightweight batch image processor designed for publishing workflows (Wor
 ### Prerequisites
 - Python 3.8 or higher
 
-### 1. Clone or Navigate to Directory
+### 1. Clone the Repository
 ```bash
-cd /mnt/data/Workspaces/TTSP/tools
+git clone https://github.com/jairuscolindres/QuickCompress.git
+cd QuickCompress
 ```
 
 ### 2. Set Up Virtual Environment (Recommended)
@@ -103,7 +104,7 @@ python3 process_images.py -c -q 75 /path/to/event_photos
 ### 4. Custom Output Directory
 Specify an exact target destination for the processed files:
 ```bash
-python3 process_images.py -r -c -p 1200 -o /mnt/data/website/media /path/to/raw_uploads
+python3 process_images.py -r -c -p 1200 -o ./optimized_media /path/to/raw_uploads
 ```
 
 ---
@@ -122,7 +123,7 @@ Settings: Resize=True (max 1920px, scale preserved) | Compress=True (quality 80)
 =======================================================
 Finished! Total size: 148.4MB -> 12.8MB
 Space Saved : 135.6MB (-91.4%)
-Output saved in: /mnt/data/Workspaces/TTSP/tools/raw_coverage_processed
+Output saved in: ./raw_coverage_processed
 =======================================================
 ```
 
@@ -131,9 +132,9 @@ Output saved in: /mnt/data/Workspaces/TTSP/tools/raw_coverage_processed
 ## Project Structure
 
 ```text
-tools/
+QuickCompress/
 ├── process_images.py    # Main CLI script
 ├── requirements.txt     # Python package requirements (Pillow)
 ├── README.md            # Documentation and usage guide
-└── venv/                # Local Python virtual environment
+└── .gitignore           # Git ignore rules
 ```
